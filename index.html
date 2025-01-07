@@ -12,50 +12,80 @@
 
         <nav class="nav-bar">
 
-            <div class="left-section">
-                <h1>
-                    Portfolio
-                </h1>
+            <div class="main-bar">
+
+                <div class="left-section">
+                    <h1>
+                        Portfolio
+                    </h1>
+                </div>
+
+                <div class="middle-section hide-on-mobile">
+                    <ul>
+                        <li><a>Home</a></li>
+                        <li><a>Skills</a></li>
+                        <li><a>Projects</a></li>
+                        <li><a>Contact</a></li>
+                        
+                    </ul>
+                </div>
+
+                <div class="right-section">
+                    <ul>
+                        <a onclick= showSidebar() class="menu-icon">
+                            <img src = "images/interface.png">
+                        </a>
+
+                        <a href="https://www.youtube.com/@magstargaming2193/featured" target="_blank" class="hide-on-mobile">
+                            <img src = "images/youtube.png">
+                        </a>
+
+                        <a href="https://github.com/yaseenrehan123" target="_blank" class="hide-on-mobile">
+                            <img src = "images/github.png">
+                        </a>
+
+                        
+                    </ul>
+                    
+                </div>
+
             </div>
 
-            <div class="middle-section">
+            <div class="side-bar">
                 <ul>
+                    <div>
+                        <a class="close-icon" onclick= hideSidebar()>
+                            <img src="images/icons8-cross-50.png">
+                         </a>
+                    </div>
+                   <div class="side-bar-contents">
                     <li><a>Home</a></li>
                     <li><a>Skills</a></li>
                     <li><a>Projects</a></li>
                     <li><a>Contact</a></li>
-                    
-                </ul>
-            </div>
-
-            <div class="right-section">
-                <ul>
-                    <a onclick= manageNavbar() class="menu-icon">
-                        <img src = "images/interface.png">
-                    </a>
-
                     <a href="https://www.youtube.com/@magstargaming2193/featured" target="_blank">
                         <img src = "images/youtube.png">
                     </a>
 
-                    <a href="https://github.com/yaseenrehan123" target="_blank">
+                    <a href="https://github.com/yaseenrehan123" target="_blank" >
                         <img src = "images/github.png">
                     </a>
-
+                   </div>
+                   
                     
                 </ul>
-                
-              
-
             </div>
-
         </nav>
 
     </header>
     <script>
-        function manageNavbar(){
-            const middlesection = document.querySelector('.middle-section')
-            middlesection.style.display = 'none'
+        function showSidebar(){
+            const sidebar = document.querySelector('.side-bar')
+            sidebar.style.display = ''; // Removes the inline display style
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.side-bar')
+            sidebar.style.display = 'none'
         }
     </script>
     
