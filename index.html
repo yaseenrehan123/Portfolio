@@ -7,7 +7,8 @@
     <link rel = "stylesheet" href="style.css">
 </head>
 <body class="root">
-    
+    <script src = "index.js"></script>
+
     <header>
 
         <nav class="nav-bar">
@@ -78,16 +79,177 @@
         </nav>
 
     </header>
-    <script>
-        function showSidebar(){
-            const sidebar = document.querySelector('.side-bar')
-            sidebar.style.display = ''; // Removes the inline display style
-        }
-        function hideSidebar(){
-            const sidebar = document.querySelector('.side-bar')
-            sidebar.style.display = 'none'
-        }
-    </script>
+
+    
+
+    <section class="welcome-section"> <!--Welcome Section/Starting details-->
+        
+        <img src = "images/my-profile-logo.jpg" class="profile-logo">
+
+            <div class="name-heading">
+                <h1 class="no-margin" text-data = 'Yaseen Rehan'>
+                    Yaseen Rehan
+                </h1>
+            </div>
+            
+            <div class="about-me">
+                <h1>
+                    <div class="bounce-heading">
+                        <span>A</span>
+                        <span>B</span>
+                        <span>O</span>
+                        <span>U</span>
+                        <span>T</span>
+                        &nbsp;
+                        <span>M</span>
+                        <span>E</span>
+                        
+                    </div>
+                </h1>
+
+                <div class="about-me-content"> <!--First card-->
+                   
+                    
+                    <div class="about-me-content-card">
+                       
+                        <h1 class="about-me-content-card-heading" text-data = 'WHO AM I ?'>
+                            WHO AM I ?
+                        </h1>
+
+                        <p class="no-margin">
+                            I am a Web-Dev, interested in making front-end websites.
+                        </p>
+
+                        <p class="no-margin">
+                            I created this website to practice html and css as well as to show my skills,
+                            I am passionate about working on front-end projects and improving myself by learning
+                            and working with different people.
+                        </p>
+                    </div>
+                   
+                    <div class="about-me-content-card"> <!--Second card-->
+                       
+                        <h1 class="about-me-content-card-heading" text-data = 'PAST'>
+                            PAST
+                        </h1>
+                        
+
+                        <p class="no-margin">
+                            I started web-dev before graduation,
+                            i had former coding experience and knew basic concepts of programming,
+                            as i had already learned and built some projects in languages such as python,
+                            My earlier projects were related to game-dev utilizing game engines such as Unity and Godot
+                            before getting into web-dev.
+                        </p>
+                    </div>
+                    
+                    <div class="about-me-content-card"> <!--Third card-->
+                       
+                        <h1 class="about-me-content-card-heading" text-data = 'WHY WEB-DEV ?'>
+                            WHY WEB-DEV ?
+                        </h1>
+                        
+
+                        <p class="no-margin">
+                           I was always passionate about creating and designing things,
+                           ever since i was a kid i was alot into science fiction,
+                           wanting to create something awesome, when i discovered 
+                           programming i immediately felt like it was the right thing for me, 
+                           this is the thing i am interested in the most.
+
+                        </p>
+                        <p>
+                            Eventually i discovered web-development,
+                            the reason i partially stopped making games was so i can dive into the real world
+                            of programming and interact with code and a new level other than 
+                            making games in a engine,
+                            i thought going into actual programming with give me better
+                            understanding on how things are created,
+                            and so that's how i started my journey!
+                        </p>
+                    </div>
+
+                    <div class="about-me-content-card"> <!--Fourth card-->
+                       
+                        <h1 class="about-me-content-card-heading" text-data = 'OPPORTUNITIES I AM LOOKING FOR:'>
+                            OPPORTUNITIES I AM LOOKING FOR:
+                        </h1>
+                        
+                        <ul>
+                            <li>Remote Internship Job</li>
+                        </ul>
+                    </div>
+
+                    
+                </div> 
+                
+                
+        </div>
+
+    </section>
+
+    <section class="skills-section"> <!--Skills Section-->
+
+        <div class="bounce-heading">
+            <span>S</span>
+            <span>K</span>
+            <span>I</span>
+            <span>L</span>
+            <span>L</span>
+            <span>S</span>
+        </div>
+        <div class="marquee">
+            <div class="scroll-wrapper">
+            
+                <div class="skill-card item1">#CSS</div>
+                <div class="skill-card item2">#HTML</div>
+                
+            </div>
+           
+            
+    </div>
+
+    <div class="skills-section-content">
+
+        <div class="skill-info-card text-style-1" style="float: left;"> <!--HTML-->
+            <h1>HTML</h1>
+            <p>
+                I fairly confident that my HTML skills are pretty decent and can make the basic structure of a website.
+                I can create a basic structures and HTML mockups without much trouble, and i am familiar with all the 
+                basic and advanced concepts of HTML.
+            </p>
+        </div>
+        <div class="skill-card-examples text-style-1">
+            <p>
+                Here are some basic examples demonstrating my HTML skills.
+            </p>
+
+            <p>
+                Here i made a simple gallery using flex-box and basic html which automatically adjusts the size
+                of the images.
+            </p>
+
+            <video src="videos/Gallery - Personal - Microsoft​ Edge 2025-01-12 19-41-01.mp4" class="max-width-300px" 
+            controls></video>
+            <p>
+                You can also check the code at my github repository!
+                <a></a>
+            </p>
+            <p>
+                Here i made a stylish flexible card-like list with all the cards about my favorite 
+                anime/manga! I just wanted to do it ☺
+            </p>
+            
+            <video src="videos/My Favorite Show - Personal - Microsoft​ Edge 2025-01-12 19-42-15.mp4" 
+            class="max-width-300px" controls>
+            </video>
+        </div>
+       
+        
+        
+    </div>
+
+    </section>
     
 </body>
 </html>
