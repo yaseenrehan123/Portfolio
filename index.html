@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel = "stylesheet" href="style.css">
+    <script src = "index.js" defer></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body class="root">
-    <script src = "index.js"></script>
+    
 
     <header>
 
@@ -23,10 +25,10 @@
 
                 <div class="middle-section hide-on-mobile">
                     <ul>
-                        <li><a>Home</a></li>
-                        <li><a>Skills</a></li>
-                        <li><a>Projects</a></li>
-                        <li><a>Contact</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
                         
                     </ul>
                 </div>
@@ -36,16 +38,21 @@
                         <a onclick= showSidebar() class="menu-icon">
                             <img src = "images/interface.png">
                         </a>
+                        <div class="bar-icon-links">
+                            <a href="https://www.youtube.com/@magstargaming2193/featured" target="_blank" class="hide-on-mobile">
+                                <i class='bx bxl-youtube' ></i>
+                            </a>
+    
+                            <a href="https://github.com/yaseenrehan123" target="_blank" class="hide-on-mobile">
+                                <i class='bx bxl-github'></i>
+                            </a>
+    
+                            <a href="mailto:yr6190457@gmail.com" target="_blank" class="hide-on-mobile">
+                                <i class='bx bxl-gmail' ></i>
+                            </a>
 
-                        <a href="https://www.youtube.com/@magstargaming2193/featured" target="_blank" class="hide-on-mobile">
-                            <img src = "images/youtube.png">
-                        </a>
-
-                        <a href="https://github.com/yaseenrehan123" target="_blank" class="hide-on-mobile">
-                            <img src = "images/github.png">
-                        </a>
-
-                        
+                        </div>
+                       
                     </ul>
                     
                 </div>
@@ -60,17 +67,25 @@
                          </a>
                     </div>
                    <div class="side-bar-contents">
-                    <li><a>Home</a></li>
-                    <li><a>Skills</a></li>
-                    <li><a>Projects</a></li>
-                    <li><a>Contact</a></li>
-                    <a href="https://www.youtube.com/@magstargaming2193/featured" target="_blank">
-                        <img src = "images/youtube.png">
-                    </a>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a  href="#contact">Contact</a></li>
 
-                    <a href="https://github.com/yaseenrehan123" target="_blank" >
-                        <img src = "images/github.png">
-                    </a>
+                    <div class="bar-icon-links">
+                        <a href="https://www.youtube.com/@magstargaming2193/featured" target="_blank">
+                            <i class='bx bxl-youtube' ></i>
+                        </a>
+    
+                        <a href="https://github.com/yaseenrehan123" target="_blank" >
+                            <i class='bx bxl-github'></i>
+                        </a>
+                        
+                        <a href="mailto:yr6190457@gmail.com" target="_blank">
+                            <i class='bx bxl-gmail' ></i>
+                        </a>
+                    </div>
+                    
                    </div>
                    
                     
@@ -82,12 +97,12 @@
 
     
 
-    <section class="welcome-section"> <!--Welcome Section/Starting details-->
+    <section class="welcome-section" id="home"> <!--Welcome Section/Starting details-->
         
         <img src = "images/my-profile-logo.jpg" class="profile-logo">
 
             <div class="name-heading">
-                <h1 class="no-margin" text-data = 'Yaseen Rehan'>
+                <h1 class="no-margin " text-data = 'Yaseen Rehan'>
                     Yaseen Rehan
                 </h1>
             </div>
@@ -106,11 +121,11 @@
                         
                     </div>
                 </h1>
-
-                <div class="about-me-content"> <!--First card-->
+                
+                <div class="about-me-content hidden-effect">
                    
                     
-                    <div class="about-me-content-card">
+                    <div class="about-me-content-card"> <!--First card-->
                        
                         <h1 class="about-me-content-card-heading" text-data = 'WHO AM I ?'>
                             WHO AM I ?
@@ -186,9 +201,9 @@
                 
         </div>
 
-    </section>
+    </section> <!--Welcome-section done-->
 
-    <section class="skills-section"> <!--Skills Section-->
+    <section class="skills-section " id="skills"> <!--Skills Section-->
 
         <div class="bounce-heading">
             <span>S</span>
@@ -198,58 +213,167 @@
             <span>L</span>
             <span>S</span>
         </div>
-        <div class="marquee">
+        <div class="marquee hidden-effect">
             <div class="scroll-wrapper">
             
                 <div class="skill-card item1">#CSS</div>
                 <div class="skill-card item2">#HTML</div>
                 
             </div>
-           
-            
-    </div>
-
-    <div class="skills-section-content">
-
-        <div class="skill-info-card text-style-1" style="float: left;"> <!--HTML-->
-            <h1>HTML</h1>
-            <p>
-                I fairly confident that my HTML skills are pretty decent and can make the basic structure of a website.
-                I can create a basic structures and HTML mockups without much trouble, and i am familiar with all the 
-                basic and advanced concepts of HTML.
-            </p>
         </div>
-        <div class="skill-card-examples text-style-1">
-            <p>
-                Here are some basic examples demonstrating my HTML skills.
-            </p>
 
-            <p>
-                Here i made a simple gallery using flex-box and basic html which automatically adjusts the size
-                of the images.
-            </p>
+        <div class="skills-section-content">
 
-            <video src="videos/Gallery - Personal - Microsoft​ Edge 2025-01-12 19-41-01.mp4" class="max-width-300px" 
-            controls></video>
-            <p>
-                You can also check the code at my github repository!
-                <a></a>
-            </p>
-            <p>
-                Here i made a stylish flexible card-like list with all the cards about my favorite 
-                anime/manga! I just wanted to do it ☺
-            </p>
-            
-            <video src="videos/My Favorite Show - Personal - Microsoft​ Edge 2025-01-12 19-42-15.mp4" 
-            class="max-width-300px" controls>
-            </video>
-        </div>
-       
-        
-        
-    </div>
-
-    </section>
+            <div class="skill-info-card text-style-1 hidden-effect" > <!--HTML-->
+                <h1>HTML</h1>
+                <section>
+                    <p>
+                        I am fairly confident that my HTML skills are pretty decent and can make the basic structure of a website.
+                        I can create a basic structures and HTML mockups without much trouble, and i am familiar with all the 
+                        basic and advanced concepts of HTML.
+                    </p>
+                    <p>
+                        Here are some basic examples demonstrating my HTML skills.
+                    </p>
     
+                   
+    
+                </section>
+                <section >
+                   
+                    <video src="videos/Gallery - Personal - Microsoft​ Edge 2025-01-12 19-41-01.mp4" class="max-width-300px" 
+                    controls></video>
+                    <p>
+                        Here i made a simple gallery using flex-box and basic html which automatically adjusts the size
+                        of the images.
+                    </p>
+
+                    <a href="https://github.com/yaseenrehan123/Practice/blob/main/scripts/gallery.html" target="_blank" >
+                        <p>Check it out on github</p>
+                    </a>
+                </section>
+                
+                <section>
+                    
+                    
+                    <video src="videos/My Favorite Show - Personal - Microsoft​ Edge 2025-01-12 19-42-15.mp4" 
+                    class="max-width-300px" controls>
+                    </video>
+                    
+                    <p>
+                        Here i made a stylish flexible card-like list with all the cards about my favorite 
+                        anime/manga! I just wanted to do it ☺
+                    </p>
+
+                    <a href="https://github.com/yaseenrehan123/Practice/tree/main/favorite-show-project" target="_blank">
+                        <p>Check it out on github</p>
+                    </a>
+                </section>
+              
+                
+            </div> <!--HTML Section Ended-->
+
+            <div class="skill-info-card text-style-1 hidden-effect" > <!--CSS-->
+                <h1>CSS</h1>
+                <p>
+                    As for my CSS skills, i am confident enough to copy simple website designs and create responsive layouts,
+                    animations and stylish effect, though i face some difficulty in recreating complex designs and often need help
+                    from other sources, but i am continuously working hard to improve my skills! 
+                    
+                </p>
+                <p>
+                    Here are some basic examples demonstrating my CSS skills.
+                </p>
+
+                <p>
+                    Here i made a responsive deck with info about different plants, this was actually a prototype for one of my
+                    other projects as well.
+                </p>
+
+                <video src="videos/Plants-wiki - Personal - Microsoft​ Edge 2025-01-13 19-46-07.mp4" class="max-width-300px" 
+                controls></video>
+
+                <a href="https://github.com/yaseenrehan123/Practice/blob/main/scripts/plants-wiki.html" target="_blank" >
+                    <p>Check it out on github</p>
+                 </a>
+                
+            </div> <!--CSS Section Ended-->
+           
+        </div>
+
+    </section> <!--Skills-section done-->
+
+    <section class="projects-section text-style-1" id="projects"> <!--Projects section-->
+        <div class="heading">
+            <h1 class="show-text-effect" text-data = 'PROJECTS' >PROJECTS</h1>
+        </div>
+        <div class="project hidden-effect">
+
+            <div class="img-container">
+                <div class="project-name">
+                    <h1 class="show-text-effect" text-data = 'Natures Deck'>Natures Deck</h1>
+                </div>
+                <img src = "images/Nature'sDeck-Project-ing.png">
+
+            </div>
+            <div class="project-info">
+                <div class="project-content">
+                    <article>
+                       <p>
+                        My first project was Nature's Deck which i am curretly working on aswell, 
+                        It is a card-deck like informative website with 100+ cards planned,
+                        is currently development.
+                       </p>
+                    </article>
+                    <div class="project-link">
+                        <a href="https://github.com/yaseenrehan123/Nature-s-Deck">
+                            Check out on github
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+
+    </section> <!--Projects-Section done-->
+    
+    <section class="contacts-section"> <!--Contacts-Section-->
+        <div class="contact-icon-holder">
+            <div class="contact-icon">
+                <a href="https://github.com/yaseenrehan123" target="_blank">
+                    <i class='bx bxl-github'></i>
+                </a>
+            </div>
+            <div class="contact-icon">
+                <a href="https://www.youtube.com/@magstargaming2193/featured" target="_blank">
+                    <i class='bx bxl-youtube' ></i>
+                </a>
+            </div>
+            <div class="contact-icon">
+                <a href="mailto:yr6190457@gmail.com" target="_blank">
+                    <i class='bx bxl-gmail' ></i>
+                </a>
+            </div>
+           
+        </div>
+
+        <div class="contact-form-section" id="contact">
+            <div class="heading text-style-1 hidden-effect">
+                <h1 class="show-text-effect" text-data = 'Get In Contact'>
+                    Get In Contact
+                </h1>
+            </div>
+            <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="eaeaae61-61d1-4c75-93ac-06e8f2358d23">
+                <input type="text" name="name" class="contact-form-element" required placeholder="Your Name">
+                <input type="email" name="email" class="contact-form-element" required placeholder="Your Email">
+                <textarea class="contact-form-element message-box " name="message" required placeholder="Your Message"> </textarea>
+                <button type="submit" class="form-submit-btn hidden-effect">
+                    Submit ->
+                </button>
+            </form>
+        </div>
+    </section>
 </body>
 </html>
