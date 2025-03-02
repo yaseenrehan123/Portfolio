@@ -10,6 +10,7 @@
     --show-text-animation-duration: 6s;
     overflow-x: hidden;
     word-wrap: break-word;
+    line-height: 2rem;
 }
 * {
     margin: 0;
@@ -57,7 +58,7 @@
 .nav-bar li{
 
     list-style-type: none;
-    font-size: clamp(10px, 4.5vw, 20px);
+    font-size: clamp(0.625rem, 4.5vw, 1.25rem);
     transition: transform 0.15s,color 0.15s;
     font-weight: bold;
     position: relative;
@@ -152,7 +153,7 @@
     justify-content: center;
     align-items: center;
     font-family: Roboto;
-    font-size: clamp(10px, 4.5vw, 18px);
+    font-size: clamp(0.625rem, 4.5vw, 1.125rem);
     color: var(--default-theme-color);
     flex-direction: column;
     gap: 10px;
@@ -245,7 +246,7 @@
 {
     content: '';
     position: absolute;
-    background-image: conic-gradient(from var(--angle), green, transparent 40% , green, transparent 40%);
+    background-image: conic-gradient(from var(--angle), #273c75, transparent 40% , green, transparent 40%);
     top: 50%;
     left: 50%;
     width: 100%;
@@ -294,7 +295,7 @@
     align-items: flex-start;
 }
 .about-me-content-card-heading{
-    color: black;
+    color: var(--default-theme-color);
    
 }
 
@@ -305,7 +306,7 @@
 }
 .skills-section{
     font-family: Roboto;
-    font-size:clamp(10px, 4.5vw, 20px);
+    font-size:clamp(0.625rem, 4.5vw, 1.25rem);
     margin: 10px 0px 100px 0px;
 }
 .skills-section .bounce-heading{
@@ -318,7 +319,7 @@
     animation: bounce 1.5s infinite ease;
     color: #e84393;
     transition: transform 0.15s;
-    font-size: clamp(38px, 8vw, 45px);
+    font-size: clamp(2.375rem, 8vw, 2.813rem);
     
 }
 .skills-section .bounce-heading span:nth-child(2){
@@ -444,10 +445,7 @@
     object-fit: cover;
 }
 .project-name{
-    font-size: clamp(25px ,5.5vw ,30px);
-    --stroke-color:#18dcff;
-    --text-color: #7efff5;
-    --show-text-animation-duration:4s;
+    font-size: clamp(1.563rem ,5.5vw ,1.875rem);
 }
 
 .project-content{
@@ -457,7 +455,7 @@
 }
 
 .projects-section .heading{
-    font-size: clamp(28px,6vw,33px);
+    font-size: clamp(1.75rem,6vw,2.063rem);
 }
 .show-text-effect{
     position: relative;
@@ -495,7 +493,7 @@
 }
 
 .contact-icon{
-    font-size: clamp(60px,12vw,100px);
+    font-size: clamp(3.75rem,12vw,6.25rem);
     color: green;
     transition: color 0.15s;
 }
@@ -514,7 +512,7 @@
     transition: color 0.15s;
 }
 .bar-icon-links{
-    font-size: clamp(30px,4vw,40px);
+    font-size: clamp(1.875rem,4vw,2.5rem);
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -534,7 +532,7 @@
    margin: 200px 0px 0px 0px;
 }
 .contact-form-section .heading{
-    font-size: clamp(26px,5vw,35px);
+    font-size: clamp(1.625rem,5vw,2.188rem);
     --stroke-color:purple;
     --show-text-animation-duration:12s;
     --text-color: #c56cf0;
@@ -542,7 +540,7 @@
 }
 .contact-form-element{
     padding: 7px 15px;
-    font-size: clamp(18px,5.3vw,30px);
+    font-size: clamp(1.125rem,5.3vw,1.875rem);
     font-family: Roboto;
     border-radius: 20px;
     outline: none;
@@ -571,7 +569,7 @@
    width: 200px;
    height: 60px;
    padding: 8px 10px;
-   font-size: clamp(26px,5vw,30px);
+   font-size: clamp(1.625rem,5vw,1.875rem);
    font-weight: bolder;
    font-family: Roboto;
    text-align: center;
